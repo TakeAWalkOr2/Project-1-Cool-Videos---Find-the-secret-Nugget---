@@ -1,0 +1,262 @@
+            /* NAVBAR */
+            
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            
+            body {
+                background-color: rgb(28, 24, 56);
+            }
+            
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                min-height: 8vh;
+                background-color: #02011e;
+                font-family: 'Hurricane', cursive;
+                box-shadow: 2px 2px 6px 1px #02011e;
+                z-index: 1;
+            }
+            
+            .logo {
+                color: rgb(255, 60, 0);
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-size: 30px;
+                z-index: 1;
+            }
+            
+            .nav-links {
+                display: flex;
+                justify-content: space-around;
+                width: 40%;
+                z-index: 1;
+            }
+            
+            .nav-links li {
+                list-style: none;
+                z-index: 1;
+            }
+            
+            .nav-links a {
+                color: rgb(255, 94, 0);
+                text-decoration: none;
+                letter-spacing: 3px;
+                font-weight: bold;
+                font-size: 20px;
+                z-index: 1;
+            }
+            
+            .burger {
+                display: none;
+                cursor: pointer;
+                z-index: 1;
+            }
+            
+            .burger div {
+                width: 25px;
+                height: 3px;
+                background-color: rgba(255, 255, 255, 0.679);
+                margin: 5px;
+                transition: all 0.3s ease;
+                z-index: 1;
+            }
+            
+            @media screen and (max-width:1024px) {
+                .nav-links {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 60%;
+                    z-index: 1;
+                }
+            }
+            
+            @media screen and (max-width:768px) {
+                body {
+                    overflow-x: hidden;
+                }
+                .nav-links {
+                    position: absolute;
+                    right: 0px;
+                    height: 92vh;
+                    top: 8vh;
+                    background-color: #02011e;
+                    box-shadow: 2px 2px 2px 1px #02011e;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 35%;
+                    transform: translateX(100%);
+                    transition: transform 0.5s ease-in;
+                    z-index: 1;
+                }
+                .nav-links li {
+                    opacity: 0;
+                    z-index: 1;
+                }
+                .burger {
+                    display: block;
+                    z-index: 1;
+                }
+            }
+            
+            .nav-active {
+                transform: translateX(0%);
+                z-index: 1;
+            }
+            
+            @keyframes navLinkFade {
+                from {
+                    opacity: 0;
+                    transform: translateX(50px);
+                    z-index: 1;
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0px);
+                    z-index: 1;
+                }
+            }
+            
+            .toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+                z-index: 1;
+            }
+            
+            .toggle .line2 {
+                opacity: 0;
+                z-index: 1;
+            }
+            
+            .toggle .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+                z-index: 1;
+            }
+            /* NAVBAR Ende */
+            
+            .rund {
+                background-image: url("HS.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 48px;
+                height: 60px;
+                border-radius: 18px;
+            }
+            /* Bild Navbar Ende */
+            
+            .WV {
+                position: relative;
+                padding-top: 25px;
+                padding-bottom: 67.5%;
+                height: 0;
+                margin-bottom: 16px;
+                overflow: hidden;
+            }
+            
+            .WV.widescreen {
+                padding-bottom: 57.25%;
+            }
+            
+            .WV.vimeo {
+                padding-top: 0;
+            }
+            
+            .WV iframe,
+            .WV object,
+            .WV embed {
+                position: absolute;
+                top: 7.5%;
+                left: 15%;
+                width: 70%;
+                height: 55%;
+                box-shadow: 0px 0px 25px 12px black;
+                display: inline;
+                float: right;
+            }
+            
+            @media only screen and (max-device-width: 800px),
+            only screen and (device-width: 1024px) and (device-height: 600px),
+            only screen and (width: 1280px) and (orientation: landscape),
+            only screen and (device-width: 800px),
+            only screen and (max-width: 767px) {
+                .WV {
+                    padding-top: 0;
+                }
+            }
+            /* Video Hauptseite Ende */
+            
+            @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+            .heart-btn {
+                position: absolute;
+                top: 58%;
+                left: 7%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .content {
+                padding: 13px 16px;
+                display: flex;
+                border: 2px solid darkgreen;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            
+            .content.heart-active {
+                border-color: black;
+                background: rgb(255, 125, 50);
+            }
+            
+            .heart {
+                position: absolute;
+                background: url("likebutton.png") no-repeat;
+                background-position: left;
+                background-size: 2900%;
+                height: 90px;
+                width: 90px;
+                top: 50%;
+                left: 21%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .text {
+                font-size: 21px;
+                margin-left: 30px;
+                color: darkgreen;
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            .numb:before {
+                content: '12';
+                font-size: 21px;
+                margin-left: 7px;
+                font-weight: 600;
+                color: darkgreen;
+                font-family: sans-serif;
+            }
+            
+            .numb.heart-active:before {
+                content: '13';
+                color: #000;
+            }
+            
+            .text.heart-active {
+                color: #000;
+            }
+            
+            .heart.heart-active {
+                animation: animate .8s steps(28) 1;
+                background-position: right;
+            }
+            
+            @keyframes animate {
+                0% {
+                    background-position: left;
+                }
+                100% {
+                    background-position: right;
+                }
+            }
+            /* Like Button Ende */
