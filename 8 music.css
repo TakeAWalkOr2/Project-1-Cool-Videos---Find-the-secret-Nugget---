@@ -1,4 +1,4 @@
-                /* NAVBAR */
+                               /* NAVBAR */
                 
                 * {
                     margin: 0px;
@@ -260,3 +260,7 @@
                     }
                 }
                 /* Like Button Ende */
+                
+                #likeb2 {
+                    top: 450px;
+                }
