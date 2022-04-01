@@ -1,4 +1,4 @@
-                               /* NAVBAR */
+                /* NAVBAR */
                 
                 * {
                     margin: 0px;
@@ -186,7 +186,7 @@
                         padding-top: 0;
                     }
                 }
-                /* Video Hauptseite Ende */
+                /* Video1 Ende*/
                 
                 @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
                 .heart-btn {
@@ -264,3 +264,4 @@
                 #likeb2 {
                     top: 450px;
                 }
+                /* Video2 Ende*/
